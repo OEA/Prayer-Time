@@ -35,11 +35,7 @@ class NetworkManager {
         Alamofire.request(baseUrl + path.rawValue, method: method, parameters: parameters).responseJSON { responseData in
             if self.isDebugMode {
                 if let request = responseData.request {
-                    print("Sending Request:\n\(String(describing: request))\n")
-                }
-                
-                if let response = responseData.response {
-                    print("Getting Response:\n\(String(describing: response))\n")
+                    print("\(method.rawValue) :\(String(describing: request))\n")
                 }
             }
             

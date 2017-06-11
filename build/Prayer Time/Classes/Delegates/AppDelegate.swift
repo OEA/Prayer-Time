@@ -15,17 +15,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        let screenBounds = UIScreen.main.bounds
-        
-        self.window = UIWindow(frame: screenBounds)
-        
-        let viewController = ViewController()
-        
-        self.window!.rootViewController = viewController
-        self.window!.backgroundColor = UIColor.white
-        self.window!.makeKeyAndVisible()
+        setupWindow()
+        setupViewController()
         
         return true
+    }
+    
+    private func setupWindow() {
+        let screenBounds = UIScreen.main.bounds
+        self.window = UIWindow(frame: screenBounds)
+        self.window!.backgroundColor = UIColor.white
+        self.window!.makeKeyAndVisible()
+    }
+    
+    private func setupViewController() {
+        
+        let userDefaults = UserDefaults.standard
+        
+//        let city = userDefaults.string(forKey: "city")
+        let county = userDefaults.string(forKey: "county")
+//        let country = userDefaults.string(forKey: "country")
+        
+        if county != nil {
+            let viewController = ViewController()
+            self.window!.rootViewController = viewController
+        } else {
+            let locationPickerViewController = LocationPickerViewController()
+            self.window!.rootViewController = locationPickerViewController
+        }
     }
 
 }

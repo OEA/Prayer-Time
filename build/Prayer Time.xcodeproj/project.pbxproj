@@ -17,6 +17,7 @@
 		95AED9E81EEDD74D00651ED6 /* IntegerTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AED9E71EEDD74D00651ED6 /* IntegerTransform.swift */; };
 		95AED9EA1EEDDA0B00651ED6 /* County.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AED9E91EEDDA0B00651ED6 /* County.swift */; };
 		95AED9EC1EEDDE1400651ED6 /* PrayTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AED9EB1EEDDE1400651ED6 /* PrayTime.swift */; };
+		95AED9EE1EEDEBBE00651ED6 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95AED9ED1EEDEBBE00651ED6 /* LocationPickerViewController.swift */; };
 		E635F951795FC6093206E0F9 /* Pods_Prayer_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA77ED01103E4BF6DA3B0BB /* Pods_Prayer_Time.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +35,7 @@
 		95AED9E71EEDD74D00651ED6 /* IntegerTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntegerTransform.swift; sourceTree = "<group>"; };
 		95AED9E91EEDDA0B00651ED6 /* County.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = County.swift; sourceTree = "<group>"; };
 		95AED9EB1EEDDE1400651ED6 /* PrayTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrayTime.swift; sourceTree = "<group>"; };
+		95AED9ED1EEDEBBE00651ED6 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
 		9D63689928AE3FFF0A1EA4D1 /* Pods-Prayer Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prayer Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Prayer Time/Pods-Prayer Time.release.xcconfig"; sourceTree = "<group>"; };
 		FBA77ED01103E4BF6DA3B0BB /* Pods_Prayer_Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prayer_Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				958406C51EEB435B004DF5E0 /* ViewController.swift */,
+				95AED9ED1EEDEBBE00651ED6 /* LocationPickerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95AED9E31EEDCE6800651ED6 /* Country.swift in Sources */,
+				95AED9EE1EEDEBBE00651ED6 /* LocationPickerViewController.swift in Sources */,
 				95AED9E51EEDCEFB00651ED6 /* City.swift in Sources */,
 				95AED9EA1EEDDA0B00651ED6 /* County.swift in Sources */,
 				954DE5491EEB5105008FBDAD /* NetworkManager.swift in Sources */,
